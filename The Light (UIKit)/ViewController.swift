@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     // State values affect the interface.
     // Their change leads to an update.
     var state = (
-        mode: TheLightModes.trafficLights,
+        mode: appModes.trafficLights,
         isSimpleLightOn: true,
         trafficLightsCurrentIndex: 0
     ) {
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     
     // MARK: - Modes support
     
-    enum TheLightModes {
+    enum appModes {
         case simpleLight
         case trafficLights
         case cameraLight
