@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,30 +14,104 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Light__UIKit_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3y-ir-tPC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
-                                    <action selector="tapScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBH-sC-uey"/>
+                                    <action selector="tapScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="xw0-9c-roS"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ikF-BR-fVu">
+                                <rect key="frame" x="58.666666666666657" y="637" width="297" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-Ss-2cA">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="HQR-QH-VzB"/>
+                                            <constraint firstAttribute="width" constant="66" id="SFx-zM-8P9"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Mode ScreenLight"/>
+                                        <connections>
+                                            <action selector="screenModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bR-V4-JL0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66S-by-TL8">
+                                        <rect key="frame" x="77" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="AN8-xw-KhD"/>
+                                            <constraint firstAttribute="width" constant="66" id="SGr-pu-6PI"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Mode TrafficLights"/>
+                                        <connections>
+                                            <action selector="trafficLightsModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxH-vJ-RJ2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxx-bI-4aN">
+                                        <rect key="frame" x="154" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="3n7-vp-FaD"/>
+                                            <constraint firstAttribute="width" constant="66" id="Yex-kL-qdt"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Mode CameraLight"/>
+                                        <connections>
+                                            <action selector="cameraLightModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qby-bw-TQy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0co-F8-Adb">
+                                        <rect key="frame" x="231" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="OlX-DK-eho"/>
+                                            <constraint firstAttribute="width" constant="66" id="sAx-qQ-Msi"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Mode CameraAndScreenLight"/>
+                                        <connections>
+                                            <action selector="cameraAndScreenLightModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPE-bj-PrP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T3y-ir-tPC" secondAttribute="bottom" id="47H-J5-5ff"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T3y-ir-tPC" secondAttribute="trailing" id="VaU-0H-RP5"/>
-                            <constraint firstItem="T3y-ir-tPC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="afe-4Z-SZu"/>
-                            <constraint firstItem="T3y-ir-tPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y8H-3p-izj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ikF-BR-fVu" secondAttribute="bottom" constant="33" id="KVu-lJ-S5f"/>
+                            <constraint firstItem="T3y-ir-tPC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mvs-Q6-A3t"/>
+                            <constraint firstItem="T3y-ir-tPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PgM-1H-udQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T3y-ir-tPC" secondAttribute="bottom" id="SMz-tG-HbS"/>
+                            <constraint firstItem="T3y-ir-tPC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gO9-B5-zei"/>
+                            <constraint firstItem="ikF-BR-fVu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vch-zo-CHT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraAndScreenLightButton" destination="0co-F8-Adb" id="DVL-bt-KMR"/>
+                        <outlet property="cameraLightButton" destination="Yxx-bI-4aN" id="la4-zw-hkU"/>
+                        <outlet property="screenLightButton" destination="mbQ-Ss-2cA" id="FuU-6y-7Ff"/>
+                        <outlet property="trafficLightsButton" destination="66S-by-TL8" id="kn9-6s-cwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="123"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.28260869565219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mode CameraAndScreenLight" width="66" height="66"/>
+        <image name="Mode CameraLight" width="66" height="66"/>
+        <image name="Mode ScreenLight" width="66" height="66"/>
+        <image name="Mode TrafficLights" width="66" height="66"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
