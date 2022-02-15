@@ -47,7 +47,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButtonsSelectedState()
         updateUI()
+    }
+    
+    func setButtonsSelectedState() {
+        screenLightButton.setImage(UIImage(named: "Mode ScreenLight Selected"), for: .selected)
+        trafficLightsButton.setImage(UIImage(named: "Mode TrafficLights Selected"), for: .selected)
+        cameraLightButton.setImage(UIImage(named: "Mode CameraLight Selected"), for: .selected)
+        cameraAndScreenLightButton.setImage(UIImage(named: "Mode CameraAndScreenLight Selected"), for: .selected)
     }
     
     // MARK: - Update from state values
@@ -81,18 +89,10 @@ class ViewController: UIViewController {
         cameraAndScreenLightButton.tintColor = tintColor
         
         // Selection
-        screenLightButton.setImage(
-            UIImage(named: "Mode ScreenLight" + (state.mode == .screenLight ? " Selected" : "")),
-            for: [])
-        trafficLightsButton.setImage(
-            UIImage(named: "Mode TrafficLights" + (state.mode == .trafficLights ? " Selected" : "")),
-            for: [])
-        cameraLightButton.setImage(
-            UIImage(named: "Mode CameraLight" + (state.mode == .cameraLight ? " Selected" : "")),
-            for: [])
-        cameraAndScreenLightButton.setImage(
-            UIImage(named: "Mode CameraAndScreenLight" + (state.mode == .cameraAndScreenLight ? " Selected" : "")),
-            for: [])
+        screenLightButton.isSelected = (state.mode == .screenLight)
+        trafficLightsButton.isSelected = (state.mode == .trafficLights)
+        cameraLightButton.isSelected = (state.mode == .cameraLight)
+        cameraAndScreenLightButton.isSelected = (state.mode == .cameraAndScreenLight)
     }
     
     // MARK: - Traffic lights support
