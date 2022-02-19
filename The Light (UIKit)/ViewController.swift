@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         didSet { updateUI() }
     }
     
-    // MARK: - Controller
+    // MARK: - Setup
     
     // Hide status bar.
     override var prefersStatusBarHidden: Bool {
