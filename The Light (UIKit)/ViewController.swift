@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         case .screenLight:
             view.backgroundColor = uiState.isScreenLightOn ? .white : .black
         case .trafficLights:
-            view.backgroundColor = trafficLightsBackgroundPalette[uiState.trafficLightsIndex]
+            view.backgroundColor = trafficLightsColors[uiState.trafficLightsIndex].background
         case .cameraLight:
             view.backgroundColor = .black
         case .cameraAndScreenLight:
@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         // Color
         let tintColor: UIColor
         if uiState.mode == .trafficLights {
-            tintColor = trafficLightsIconPalette[uiState.trafficLightsIndex]
+            tintColor = trafficLightsColors[uiState.trafficLightsIndex].icon
         } else {
             tintColor = UIColor(white: 0.5, alpha: 1)
         }
@@ -102,14 +102,22 @@ class ViewController: UIViewController {
     
     // MARK: - Traffic lights support
     
-    // Traffic light possible colors.
-    let trafficLightsBackgroundPalette = [#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), #colorLiteral(red: 0.9490196078, green: 0.9254901961, blue: 0.3490196078, alpha: 1), #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)]
-    let trafficLightsIconPalette = [#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7790220147), UIColor(white: 0.5, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7790220147)]
-
-    // Cycles through colors.
+    // Traffic light colors.
+    struct BacgroundIconColorPair {
+        let background: UIColor
+        let icon: UIColor
+    }
+    
+    let trafficLightsColors: [BacgroundIconColorPair] = [
+        BacgroundIconColorPair(background: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), icon: UIColor(white: 1, alpha: 0.78)),
+        BacgroundIconColorPair(background: #colorLiteral(red: 0.9490196078, green: 0.9254901961, blue: 0.3490196078, alpha: 1), icon: UIColor(white: 0.5, alpha: 1)),
+        BacgroundIconColorPair(background: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), icon: UIColor(white: 1, alpha: 0.78))
+    ]
+        
+    // Cycling through colors.
     func trafficLightsNewIndex() -> Int {
-        let nextIndex = uiState.trafficLightsIndex + 1
-        return (nextIndex < trafficLightsBackgroundPalette.count) ? nextIndex : 0
+        let next = uiState.trafficLightsIndex + 1
+        return (next < trafficLightsColors.count) ? next : 0
     }
     
     // MARK: - Camera light support
