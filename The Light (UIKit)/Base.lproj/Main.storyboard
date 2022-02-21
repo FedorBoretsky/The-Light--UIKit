@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,18 +14,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Light__UIKit_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3y-ir-tPC">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="tapScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="xw0-9c-roS"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ikF-BR-fVu">
-                                <rect key="frame" x="151.5" y="501" width="297" height="66"/>
+                                <rect key="frame" x="58.666666666666657" y="637" width="297" height="66"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-Ss-2cA">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
@@ -33,7 +35,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="Mode ScreenLight"/>
+                                        <state key="normal" image="ScreenSimpleLight"/>
                                         <connections>
                                             <action selector="screenModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bR-V4-JL0"/>
                                         </connections>
@@ -46,7 +48,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="Mode TrafficLights"/>
+                                        <state key="normal" image="ScreenTrafficLights"/>
                                         <connections>
                                             <action selector="trafficLightsModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxH-vJ-RJ2"/>
                                         </connections>
@@ -59,7 +61,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="Mode CameraLight"/>
+                                        <state key="normal" image="CameraLight"/>
                                         <connections>
                                             <action selector="cameraLightModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qby-bw-TQy"/>
                                         </connections>
@@ -72,7 +74,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="Mode CameraAndScreenLight"/>
+                                        <state key="normal" image="CameraAndScreenLights"/>
                                         <connections>
                                             <action selector="cameraAndScreenLightModeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPE-bj-PrP"/>
                                         </connections>
@@ -92,7 +94,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cameraAndScreenLightButton" destination="0co-F8-Adb" id="DVL-bt-KMR"/>
+                        <outlet property="cameraAndScreenLightsButton" destination="0co-F8-Adb" id="DVL-bt-KMR"/>
                         <outlet property="cameraLightButton" destination="Yxx-bI-4aN" id="la4-zw-hkU"/>
                         <outlet property="screenSimpleLightButton" destination="mbQ-Ss-2cA" id="FuU-6y-7Ff"/>
                         <outlet property="screenTrafficLightsButton" destination="66S-by-TL8" id="kn9-6s-cwb"/>
@@ -104,10 +106,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Mode CameraAndScreenLight" width="66" height="66"/>
-        <image name="Mode CameraLight" width="66" height="66"/>
-        <image name="Mode ScreenLight" width="66" height="66"/>
-        <image name="Mode TrafficLights" width="66" height="66"/>
+        <image name="CameraAndScreenLights" width="66" height="66"/>
+        <image name="CameraLight" width="66" height="66"/>
+        <image name="ScreenSimpleLight" width="66" height="66"/>
+        <image name="ScreenTrafficLights" width="66" height="66"/>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
