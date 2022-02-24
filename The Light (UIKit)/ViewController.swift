@@ -136,7 +136,7 @@ class ViewController: UIViewController {
             uiState.isCameraLightOn.toggle()
         case .cameraAndScreenLights:
             uiState.isCameraLightOn.toggle()
-            uiState.isScreenLightOn.toggle()
+            uiState.isScreenLightOn = uiState.isCameraLightOn
         }
     }
 
@@ -177,7 +177,7 @@ class ViewController: UIViewController {
             uiState.isScreenLightOn = false
         case .cameraAndScreenLights:
             uiState.isCameraLightOn = true
-            uiState.isScreenLightOn = true
+            uiState.isScreenLightOn = uiState.isCameraLightOn
         }
     }
 }
