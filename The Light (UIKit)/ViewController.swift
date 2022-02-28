@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setButtonsSelectedState()
+        beginMode(.screenSimpleLight)
         updateUI()
     }
     
@@ -142,7 +143,7 @@ class ViewController: UIViewController {
 
     func buttonActionForMode(_ tappedMode: AppMode) {
         if tappedMode != uiState.appMode {
-            startMode(tappedMode)
+            beginMode(tappedMode)
         } else {
             tapScreen()
         }
@@ -164,7 +165,7 @@ class ViewController: UIViewController {
         buttonActionForMode(.cameraAndScreenLights)
     }
     
-    func startMode(_ newMode: AppMode) {
+    func beginMode(_ newMode: AppMode) {
         uiState.appMode = newMode
         switch newMode {
         case .screenSimpleLight:
