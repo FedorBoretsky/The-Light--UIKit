@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     // MARK: - App modes and state
     
-    enum Mode {
+    enum AppMode {
         case screenSimpleLight
         case screenTrafficLights
         case cameraLight
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     // State values affect the interface.
     // Their change leads to an update.
     struct UIState {
-        var mode: Mode = .screenSimpleLight
+        var appMode: AppMode = .screenSimpleLight
         var isScreenLightOn: Bool = true
         var isCameraLightOn: Bool = false
         var trafficLightsIndex: Int = 0
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     }
     
     func updateScreenLight() {
-        switch uiState.mode {
+        switch uiState.appMode {
         case .screenSimpleLight:
             view.backgroundColor = uiState.isScreenLightOn ? .white : .black
         case .screenTrafficLights:
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         
         // Color
         let tintColor: UIColor
-        if uiState.mode == .screenTrafficLights {
+        if uiState.appMode == .screenTrafficLights {
             tintColor = trafficLightsColors[uiState.trafficLightsIndex].iconColor
         } else {
             tintColor = UIColor(white: 0.5, alpha: 1)
@@ -97,10 +97,10 @@ class ViewController: UIViewController {
         cameraAndScreenLightsButton.tintColor = tintColor
         
         // Selection
-        screenSimpleLightButton.isSelected = (uiState.mode == .screenSimpleLight)
-        screenTrafficLightsButton.isSelected = (uiState.mode == .screenTrafficLights)
-        cameraLightButton.isSelected = (uiState.mode == .cameraLight)
-        cameraAndScreenLightsButton.isSelected = (uiState.mode == .cameraAndScreenLights)
+        screenSimpleLightButton.isSelected = (uiState.appMode == .screenSimpleLight)
+        screenTrafficLightsButton.isSelected = (uiState.appMode == .screenTrafficLights)
+        cameraLightButton.isSelected = (uiState.appMode == .cameraLight)
+        cameraAndScreenLightsButton.isSelected = (uiState.appMode == .cameraAndScreenLights)
     }
     
     // MARK: - Traffic lights support
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     ]
         
     // Cycling through colors.
-    func trafficLightsSwitchIndex() -> Int {
+    func trafficLightsNewIndex() -> Int {
         let next = uiState.trafficLightsIndex + 1
         return (next < trafficLightsColors.count) ? next : 0
     }
@@ -127,11 +127,11 @@ class ViewController: UIViewController {
     // MARK: - Interaction
     
     @IBAction func tapScreen() {
-        switch uiState.mode {
+        switch uiState.appMode {
         case .screenSimpleLight:
             uiState.isScreenLightOn.toggle()
         case .screenTrafficLights:
-            uiState.trafficLightsIndex = trafficLightsSwitchIndex()
+            uiState.trafficLightsIndex = trafficLightsNewIndex()
         case .cameraLight:
             uiState.isCameraLightOn.toggle()
         case .cameraAndScreenLights:
@@ -140,8 +140,8 @@ class ViewController: UIViewController {
         }
     }
 
-    func buttonActionForMode(_ tappedMode: Mode) {
-        if tappedMode != uiState.mode {
+    func buttonActionForMode(_ tappedMode: AppMode) {
+        if tappedMode != uiState.appMode {
             startMode(tappedMode)
         } else {
             tapScreen()
@@ -164,8 +164,8 @@ class ViewController: UIViewController {
         buttonActionForMode(.cameraAndScreenLights)
     }
     
-    func startMode(_ newMode: Mode) {
-        uiState.mode = newMode
+    func startMode(_ newMode: AppMode) {
+        uiState.appMode = newMode
         switch newMode {
         case .screenSimpleLight:
             uiState.isCameraLightOn = false
