@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         updateButtons()
     }
     
-    fileprivate func updateScreenLight() {
+    func updateScreenLight() {
         switch uiState.mode {
         case .screenSimpleLight:
             view.backgroundColor = uiState.isScreenLightOn ? .white : .black
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         }
     }
     
-    fileprivate func updateCameraLight() {
+    func updateCameraLight() {
         toggleTorch(on: uiState.isCameraLightOn)
     }
     
