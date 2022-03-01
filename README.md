@@ -19,4 +19,5 @@ UIKit version.
 ![Screenshot 2](https://github.com/FedorBoretsky/The-Light--UIKit/blob/main/The%20Light%20(UIKit)/Screenshots/Screenshot%202.png?raw=true)
 ![Screenshot 3](https://github.com/FedorBoretsky/The-Light--UIKit/blob/main/The%20Light%20(UIKit)/Screenshots/Screenshot%203.png?raw=true)
 ![Screenshot 4](https://github.com/FedorBoretsky/The-Light--UIKit/blob/main/The%20Light%20(UIKit)/Screenshots/Screenshot%204.png?raw=true)
+![Screenshot 5](https://github.com/FedorBoretsky/The-Light--UIKit/blob/main/The%20Light%20(UIKit)/Screenshots/Screenshot%205.png?raw=true)
 

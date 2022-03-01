@@ -17,6 +17,7 @@
 		9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D127CDFB64008154B3 /* Screenshot 4.png */; };
 		9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D227CDFB64008154B3 /* Screenshot 2.png */; };
 		9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D327CDFB64008154B3 /* Screenshot 3.png */; };
+		9F71A75027CE6D10005482A7 /* Screenshot 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F71A74F27CE6D10005482A7 /* Screenshot 5.png */; };
 		9F7CC47D27CE30EE00724D78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CC47C27CE30EE00724D78 /* README.md */; };
 		9FE64E3E27CE38E9001C2FE8 /* Mode CameraLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3A27CE38E9001C2FE8 /* Mode CameraLight@1x.png */; };
 		9FE64E3F27CE38E9001C2FE8 /* Mode ScreenLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3B27CE38E9001C2FE8 /* Mode ScreenLight@1x.png */; };
@@ -38,6 +39,7 @@
 		9F2607D127CDFB64008154B3 /* Screenshot 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 4.png"; sourceTree = "<group>"; };
 		9F2607D227CDFB64008154B3 /* Screenshot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2.png"; sourceTree = "<group>"; };
 		9F2607D327CDFB64008154B3 /* Screenshot 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 3.png"; sourceTree = "<group>"; };
+		9F71A74F27CE6D10005482A7 /* Screenshot 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 5.png"; sourceTree = "<group>"; };
 		9F7CC47C27CE30EE00724D78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9FE64E3A27CE38E9001C2FE8 /* Mode CameraLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraLight@1x.png"; sourceTree = "<group>"; };
 		9FE64E3B27CE38E9001C2FE8 /* Mode ScreenLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode ScreenLight@1x.png"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				9F2607D227CDFB64008154B3 /* Screenshot 2.png */,
 				9F2607D327CDFB64008154B3 /* Screenshot 3.png */,
 				9F2607D127CDFB64008154B3 /* Screenshot 4.png */,
+				9F71A74F27CE6D10005482A7 /* Screenshot 5.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				9FE64E4127CE38E9001C2FE8 /* Mode TrafficLights@1x.png in Resources */,
 				9F2607D427CDFB64008154B3 /* Screenshot 1.png in Resources */,
 				9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */,
+				9F71A75027CE6D10005482A7 /* Screenshot 5.png in Resources */,
 				9F16FB412797214A00A51967 /* Main.storyboard in Resources */,
 				9F7CC47D27CE30EE00724D78 /* README.md in Resources */,
 				9FE64E3E27CE38E9001C2FE8 /* Mode CameraLight@1x.png in Resources */,
