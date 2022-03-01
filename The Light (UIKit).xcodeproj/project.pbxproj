@@ -18,10 +18,10 @@
 		9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D227CDFB64008154B3 /* Screenshot 2.png */; };
 		9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D327CDFB64008154B3 /* Screenshot 3.png */; };
 		9F7CC47D27CE30EE00724D78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CC47C27CE30EE00724D78 /* README.md */; };
-		9FE64E3627CE3842001C2FE8 /* Mode TrafficLights@0,5x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3227CE3842001C2FE8 /* Mode TrafficLights@0,5x.png */; };
-		9FE64E3727CE3842001C2FE8 /* Mode ScreenLight@0,5x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3327CE3842001C2FE8 /* Mode ScreenLight@0,5x.png */; };
-		9FE64E3827CE3842001C2FE8 /* Mode CameraLight@0,5x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3427CE3842001C2FE8 /* Mode CameraLight@0,5x.png */; };
-		9FE64E3927CE3842001C2FE8 /* Mode CameraAndScreenLight@0,5x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3527CE3842001C2FE8 /* Mode CameraAndScreenLight@0,5x.png */; };
+		9FE64E3E27CE38E9001C2FE8 /* Mode CameraLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3A27CE38E9001C2FE8 /* Mode CameraLight@1x.png */; };
+		9FE64E3F27CE38E9001C2FE8 /* Mode ScreenLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3B27CE38E9001C2FE8 /* Mode ScreenLight@1x.png */; };
+		9FE64E4027CE38E9001C2FE8 /* Mode CameraAndScreenLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3C27CE38E9001C2FE8 /* Mode CameraAndScreenLight@1x.png */; };
+		9FE64E4127CE38E9001C2FE8 /* Mode TrafficLights@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE64E3D27CE38E9001C2FE8 /* Mode TrafficLights@1x.png */; };
 		9FFA703C27C42CE700393B55 /* toggleTorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA703B27C42CE700393B55 /* toggleTorch.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,10 +39,10 @@
 		9F2607D227CDFB64008154B3 /* Screenshot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2.png"; sourceTree = "<group>"; };
 		9F2607D327CDFB64008154B3 /* Screenshot 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 3.png"; sourceTree = "<group>"; };
 		9F7CC47C27CE30EE00724D78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9FE64E3227CE3842001C2FE8 /* Mode TrafficLights@0,5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode TrafficLights@0,5x.png"; sourceTree = "<group>"; };
-		9FE64E3327CE3842001C2FE8 /* Mode ScreenLight@0,5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode ScreenLight@0,5x.png"; sourceTree = "<group>"; };
-		9FE64E3427CE3842001C2FE8 /* Mode CameraLight@0,5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraLight@0,5x.png"; sourceTree = "<group>"; };
-		9FE64E3527CE3842001C2FE8 /* Mode CameraAndScreenLight@0,5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraAndScreenLight@0,5x.png"; sourceTree = "<group>"; };
+		9FE64E3A27CE38E9001C2FE8 /* Mode CameraLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraLight@1x.png"; sourceTree = "<group>"; };
+		9FE64E3B27CE38E9001C2FE8 /* Mode ScreenLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode ScreenLight@1x.png"; sourceTree = "<group>"; };
+		9FE64E3C27CE38E9001C2FE8 /* Mode CameraAndScreenLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraAndScreenLight@1x.png"; sourceTree = "<group>"; };
+		9FE64E3D27CE38E9001C2FE8 /* Mode TrafficLights@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode TrafficLights@1x.png"; sourceTree = "<group>"; };
 		9FFA703B27C42CE700393B55 /* toggleTorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleTorch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,10 +105,10 @@
 		9FE64E3127CE3842001C2FE8 /* Illustrations for Readme */ = {
 			isa = PBXGroup;
 			children = (
-				9FE64E3227CE3842001C2FE8 /* Mode TrafficLights@0,5x.png */,
-				9FE64E3327CE3842001C2FE8 /* Mode ScreenLight@0,5x.png */,
-				9FE64E3427CE3842001C2FE8 /* Mode CameraLight@0,5x.png */,
-				9FE64E3527CE3842001C2FE8 /* Mode CameraAndScreenLight@0,5x.png */,
+				9FE64E3C27CE38E9001C2FE8 /* Mode CameraAndScreenLight@1x.png */,
+				9FE64E3A27CE38E9001C2FE8 /* Mode CameraLight@1x.png */,
+				9FE64E3B27CE38E9001C2FE8 /* Mode ScreenLight@1x.png */,
+				9FE64E3D27CE38E9001C2FE8 /* Mode TrafficLights@1x.png */,
 			);
 			path = "Illustrations for Readme";
 			sourceTree = "<group>";
@@ -171,18 +171,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE64E3F27CE38E9001C2FE8 /* Mode ScreenLight@1x.png in Resources */,
 				9F16FB462797214C00A51967 /* LaunchScreen.storyboard in Resources */,
 				9F16FB432797214C00A51967 /* Assets.xcassets in Resources */,
 				9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */,
+				9FE64E4127CE38E9001C2FE8 /* Mode TrafficLights@1x.png in Resources */,
 				9F2607D427CDFB64008154B3 /* Screenshot 1.png in Resources */,
-				9FE64E3727CE3842001C2FE8 /* Mode ScreenLight@0,5x.png in Resources */,
-				9FE64E3827CE3842001C2FE8 /* Mode CameraLight@0,5x.png in Resources */,
-				9FE64E3627CE3842001C2FE8 /* Mode TrafficLights@0,5x.png in Resources */,
 				9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */,
 				9F16FB412797214A00A51967 /* Main.storyboard in Resources */,
 				9F7CC47D27CE30EE00724D78 /* README.md in Resources */,
+				9FE64E3E27CE38E9001C2FE8 /* Mode CameraLight@1x.png in Resources */,
+				9FE64E4027CE38E9001C2FE8 /* Mode CameraAndScreenLight@1x.png in Resources */,
 				9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */,
-				9FE64E3927CE3842001C2FE8 /* Mode CameraAndScreenLight@0,5x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
