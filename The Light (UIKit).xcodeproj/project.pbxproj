@@ -13,6 +13,10 @@
 		9F16FB412797214A00A51967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FB3F2797214A00A51967 /* Main.storyboard */; };
 		9F16FB432797214C00A51967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FB422797214C00A51967 /* Assets.xcassets */; };
 		9F16FB462797214C00A51967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FB442797214C00A51967 /* LaunchScreen.storyboard */; };
+		9F2607D427CDFB64008154B3 /* Screenshot 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D027CDFB64008154B3 /* Screenshot 1.png */; };
+		9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D127CDFB64008154B3 /* Screenshot 4.png */; };
+		9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D227CDFB64008154B3 /* Screenshot 2.png */; };
+		9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D327CDFB64008154B3 /* Screenshot 3.png */; };
 		9FFA703C27C42CE700393B55 /* toggleTorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA703B27C42CE700393B55 /* toggleTorch.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		9F16FB422797214C00A51967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F16FB452797214C00A51967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F16FB472797214C00A51967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2607D027CDFB64008154B3 /* Screenshot 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 1.png"; sourceTree = "<group>"; };
+		9F2607D127CDFB64008154B3 /* Screenshot 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 4.png"; sourceTree = "<group>"; };
+		9F2607D227CDFB64008154B3 /* Screenshot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2.png"; sourceTree = "<group>"; };
+		9F2607D327CDFB64008154B3 /* Screenshot 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 3.png"; sourceTree = "<group>"; };
 		9FFA703B27C42CE700393B55 /* toggleTorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleTorch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +66,7 @@
 		9F16FB382797214A00A51967 /* The Light (UIKit) */ = {
 			isa = PBXGroup;
 			children = (
+				9F2607CF27CDFAFE008154B3 /* Screenshots */,
 				9F16FB392797214A00A51967 /* AppDelegate.swift */,
 				9F16FB3B2797214A00A51967 /* SceneDelegate.swift */,
 				9F16FB3D2797214A00A51967 /* ViewController.swift */,
@@ -68,6 +77,17 @@
 				9F16FB472797214C00A51967 /* Info.plist */,
 			);
 			path = "The Light (UIKit)";
+			sourceTree = "<group>";
+		};
+		9F2607CF27CDFAFE008154B3 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				9F2607D027CDFB64008154B3 /* Screenshot 1.png */,
+				9F2607D227CDFB64008154B3 /* Screenshot 2.png */,
+				9F2607D327CDFB64008154B3 /* Screenshot 3.png */,
+				9F2607D127CDFB64008154B3 /* Screenshot 4.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +150,11 @@
 			files = (
 				9F16FB462797214C00A51967 /* LaunchScreen.storyboard in Resources */,
 				9F16FB432797214C00A51967 /* Assets.xcassets in Resources */,
+				9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */,
+				9F2607D427CDFB64008154B3 /* Screenshot 1.png in Resources */,
+				9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */,
 				9F16FB412797214A00A51967 /* Main.storyboard in Resources */,
+				9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
