@@ -1,6 +1,6 @@
 # The Light (UIKit)
 
-The Light project from App Development with Swift curriculum 2022. 
+The Light project from App Development with Swift curriculum Moscow Digital Academy 2022. 
 
 UIKit version.
 
