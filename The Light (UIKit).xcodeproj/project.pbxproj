@@ -17,6 +17,7 @@
 		9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D127CDFB64008154B3 /* Screenshot 4.png */; };
 		9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D227CDFB64008154B3 /* Screenshot 2.png */; };
 		9F2607D727CDFB64008154B3 /* Screenshot 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2607D327CDFB64008154B3 /* Screenshot 3.png */; };
+		9F7CC47D27CE30EE00724D78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CC47C27CE30EE00724D78 /* README.md */; };
 		9FFA703C27C42CE700393B55 /* toggleTorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA703B27C42CE700393B55 /* toggleTorch.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		9F2607D127CDFB64008154B3 /* Screenshot 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 4.png"; sourceTree = "<group>"; };
 		9F2607D227CDFB64008154B3 /* Screenshot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2.png"; sourceTree = "<group>"; };
 		9F2607D327CDFB64008154B3 /* Screenshot 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 3.png"; sourceTree = "<group>"; };
+		9F7CC47C27CE30EE00724D78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9FFA703B27C42CE700393B55 /* toggleTorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleTorch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 		9F16FB2D2797214A00A51967 = {
 			isa = PBXGroup;
 			children = (
+				9F7CC47C27CE30EE00724D78 /* README.md */,
 				9F16FB382797214A00A51967 /* The Light (UIKit) */,
 				9F16FB372797214A00A51967 /* Products */,
 			);
@@ -154,6 +157,7 @@
 				9F2607D427CDFB64008154B3 /* Screenshot 1.png in Resources */,
 				9F2607D527CDFB64008154B3 /* Screenshot 4.png in Resources */,
 				9F16FB412797214A00A51967 /* Main.storyboard in Resources */,
+				9F7CC47D27CE30EE00724D78 /* README.md in Resources */,
 				9F2607D627CDFB64008154B3 /* Screenshot 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
