@@ -106,16 +106,16 @@ class ViewController: UIViewController {
     
     // MARK: - Traffic lights support
     
-    struct BacgroundIconColorPair {
+    struct BacgroundAndIconColorPair {
         let backgroundColor: UIColor
         let iconColor: UIColor
     }
     
     // Traffic light colors.
-    let trafficLightsColors: [BacgroundIconColorPair] = [
-        BacgroundIconColorPair(backgroundColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), iconColor: UIColor(white: 1, alpha: 0.78)),
-        BacgroundIconColorPair(backgroundColor: #colorLiteral(red: 0.9490196078, green: 0.9254901961, blue: 0.3490196078, alpha: 1), iconColor: UIColor(white: 0.5, alpha: 1)),
-        BacgroundIconColorPair(backgroundColor: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), iconColor: UIColor(white: 1, alpha: 0.78))
+    let trafficLightsColors: [BacgroundAndIconColorPair] = [
+        BacgroundAndIconColorPair(backgroundColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), iconColor: UIColor(white: 1, alpha: 0.78)),
+        BacgroundAndIconColorPair(backgroundColor: #colorLiteral(red: 0.9490196078, green: 0.9254901961, blue: 0.3490196078, alpha: 1), iconColor: UIColor(white: 0.5, alpha: 1)),
+        BacgroundAndIconColorPair(backgroundColor: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), iconColor: UIColor(white: 1, alpha: 0.78))
     ]
         
     // Cycling through colors.
